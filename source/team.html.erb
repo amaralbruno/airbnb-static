@@ -1,0 +1,11 @@
+<div class="container text-center padded">
+  <h1>Our team</h1>
+  <ul class="list-inline">
+    <% data.team.each do |member, info| %>
+      <li>
+        <h2><%= member %></h2>
+        <%= image_tag info.img, class: "img-circle avatar-big" %>
+      </li>
+    <% end %>
+  </ul>
+</div>
