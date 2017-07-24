@@ -1,3 +1,7 @@
+data.team.each do |name, info|
+  proxy "/flats/#{name}.html", "/flats/show.html", :locals => { :owner => name }, :ignore => true
+end
+
 ###
 # Compass
 ###
