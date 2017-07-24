@@ -3,9 +3,12 @@
   <ul class="list-inline">
     <% data.team.each do |member, info| %>
       <li>
-        <h2><%= member %></h2>
+        <h2><%= member.capitalize %></h2>
         <%= image_tag info.img, class: "img-circle avatar-big" %>
       </li>
     <% end %>
   </ul>
+  <% link_to 'mailto:contact@airbnb.com' do %>
+    <i class="fa fa-envelope"></i> contact@airbnb.com
+  <% end %>
 </div>
